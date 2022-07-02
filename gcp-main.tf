@@ -35,5 +35,4 @@ resource "google_sql_user" "users" {
   name     = "spotmusic"
   host     = "%"
   instance = google_sql_database_instance.instance.name
-  password = "$p0tmUs!ç"
 }
