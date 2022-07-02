@@ -18,7 +18,7 @@ resource "google_artifact_registry_repository" "spotmusic-repo-front" {
 }
 
 resource "google_sql_database" "database" {
-  name     = "spotmusic"
+  name     = "playlist"
   instance = google_sql_database_instance.instance.name
 }
 
