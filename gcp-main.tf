@@ -18,7 +18,7 @@ resource "google_artifact_registry_repository" "spotmusic-repo-front" {
 }
 
 resource "google_sql_database" "database" {
-  name     = "spotmusic"
+  name     = "playlist"
   instance = google_sql_database_instance.instance.name
 }
 
@@ -35,5 +35,4 @@ resource "google_sql_user" "users" {
   name     = "spotmusic"
   host     = "%"
   instance = google_sql_database_instance.instance.name
-  password = "$p0tmUs!ç"
 }
